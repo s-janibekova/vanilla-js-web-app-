@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen" class="show">
+    <pre>
+        _____                    
+       / ____|                   
+      | |  __ _   _  ___  ___ ___
+      | | |_ | | | |/ _ \/ __/ __ 
+      | |__| | |_| |  __/\__ \__ \
+       \_____|\__,_|\___||___/___/
+
+    </pre>
+    <p>Здесь список парней</p>
+    <p>Найди своего жениха</p>
+    <button id="start">Start</button>
+  </div>
+  <div id="game-screen" class="hide">
+    <ul id="word-list"></ul>
+    <p>Кликни на имя чтобы проверить</p>
+    <p id="guesses-remaining"></p>
+    <p id="winner" class="hide">Молодец! Вы поженитесь <a href="./index.html">Play again?</a></p>
+    <p id="loser" class="hide">Сорри, не угадала, ищи нового жениха <a href="./index.html">Play again?</a></p>
+  </div>
+  <script src="words.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
